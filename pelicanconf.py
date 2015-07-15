@@ -7,7 +7,8 @@ SITENAME = u'Python User Group Chengdu'
 SITEURL = u'http://dev:8001'
 
 PATH = u'content'
-STATIC_PATHS = ['img', ]
+STATIC_PATHS = ['img', 'extra/CNAME']
+EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 
 TIMEZONE = u'Asia/Shanghai'
 
