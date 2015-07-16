@@ -1,9 +1,4 @@
 .idea
 *.pyc
 output
-
-
-content/.Ulysses-Group.plist
-content/.Ulysses-Group.plist
-
-content/.Ulysses-Group.plist
+*.plist

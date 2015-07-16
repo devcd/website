@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'devcd.io'
-SITENAME = u'Developer at Chengdu'
+SITENAME = u'DevCD'
 SITEURL = u'http://dev:8001'
 
 PATH = u'content'
@@ -25,11 +25,11 @@ AUTHOR_FEED_RSS = None
 LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Python.org', 'http://python.org/'),
          ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+         ('V2EX', 'https://v2ex.com'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('QQ 群号 312412351', 'http://qun.qzone.qq.com/group#!/312412351/home', 'qq'),
+          ('Github', 'https://github.com/devcd'),)
 
 DEFAULT_PAGINATION = 10
 
@@ -46,13 +46,21 @@ PAGE_URL = 'pages/{slug}.html'
 
 
 
-THEME = "/Users/too/ws/pycd/pelican-bootstrap3"
+THEME = "pelican-bootstrap3"
 # BOOTSTRAP_THEME = "readable"
 BOOTSTRAP_THEME = "simplex"
-BOOTSTRAP_FLUID = False
+# BOOTSTRAP_FLUID = False
 
 
 DATE_FORMATS = {
     'en': '%a, %d %b %Y',
     'zh-cn': '%-m 月 %-d 日, %Y',
 }
+
+
+PLUGIN_PATHS = ["plugins", "plugins"]
+PLUGINS = ['tag_cloud',]
+DISPLAY_TAGS_ON_SIDEBAR = True
+DISPLAY_TAGS_INLINE = True
+TAGS_URL = "tags.html"
+TAG_CLOUD_MAX_ITEMS = 10
