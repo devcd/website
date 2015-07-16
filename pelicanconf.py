@@ -47,7 +47,8 @@ PAGE_URL = 'pages/{slug}.html'
 
 
 THEME = "/Users/too/ws/pycd/pelican-bootstrap3"
-BOOTSTRAP_THEME = "paper"
+# BOOTSTRAP_THEME = "readable"
+BOOTSTRAP_THEME = "simplex"
 BOOTSTRAP_FLUID = False
 
 

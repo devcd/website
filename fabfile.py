@@ -92,3 +92,10 @@ def gh_pages():
     rebuild()
     local("ghp-import -b {github_pages_branch} {deploy_path}".format(**env))
     local("git push origin {github_pages_branch}".format(**env))
+
+    
+def devcd():
+    """Publish to devcd of Github pages"""
+    rebuild()
+    local("gph-import output")
+    local("git push git@github.com:devcd/devcd.github.io.git gh-pages:master")
