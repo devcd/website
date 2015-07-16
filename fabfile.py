@@ -97,5 +97,5 @@ def gh_pages():
 def devcd():
     """Publish to devcd of Github pages"""
     rebuild()
-    local("gph-import output")
+    local("ghp-import output")
     local("git push git@github.com:devcd/devcd.github.io.git gh-pages:master")
