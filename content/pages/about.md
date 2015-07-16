@@ -5,8 +5,8 @@ Slug: about
 Authors: Too
 Summary: 关于 devcd.io 的说明
 
-## 什么是PYCD？
-Python user group of Chengdu in China
+## 什么是 devcd.io？
+Developers at Chengdu in China
 
 ## 网上信息
 QQ 群: 312412351
