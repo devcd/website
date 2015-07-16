@@ -1,7 +1,7 @@
-Title: PYCD 站点开通
+Title: devcd.io 站点开通
 Subtitle: 信息，交流，共享
 Date: 2015-07-15 17:20
-Category: Log
+Category: News
 Tags: log, news
 Slug: start
 Authors: Too

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = u'Too'
+AUTHOR = u'devcd.io'
 SITENAME = u'Developer at Chengdu'
 SITEURL = u'http://dev:8001'
 
