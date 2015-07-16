@@ -20,5 +20,9 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
 
-#DISQUS_SITENAME = ""
+RELATIVE_URLS = False
+
+DISQUS_SITENAME = "devcd"
 #GOOGLE_ANALYTICS = ""
+
+
