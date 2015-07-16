@@ -1,4 +1,4 @@
-Title: 关于 devcd.io 的介绍
+Title: 关于 devcd.io
 Date: 2015-07-15 10:22
 Tags: about, devcd
 Slug: about
