@@ -48,7 +48,7 @@ PAGE_URL = 'pages/{slug}.html'
 THEME = "pelican-bootstrap3"
 # BOOTSTRAP_THEME = "readable"
 BOOTSTRAP_THEME = "simplex"
-# BOOTSTRAP_FLUID = False
+# BOOTSTRAP_FLUID = True
 
 
 DATE_FORMATS = {
