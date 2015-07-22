@@ -1,9 +1,12 @@
 from fabric.api import *
+from datetime import datetime
 import fabric.contrib.project as project
 import os
 import shutil
 import sys
 import SocketServer
+
+import livereload
 
 from pelican.server import ComplexHTTPRequestHandler
 
@@ -100,3 +103,65 @@ def devcd():
     local('pelican -s publishconf.py')
     local("ghp-import output")
     local("git push git@github.com:devcd/devcd.github.io.git gh-pages:master")
+
+
+def live_build(port=PORT):
+    """ Need pip install livereload """
+    local('make clean')  # 1
+    local('make html')  # 2
+    os.chdir('output')  # 3
+    server = livereload.Server()  # 4
+    server.watch('../content/*.md',  # 5
+                 livereload.shell('pelican -s ../pelicanconf.py -o ../output'))  # 6
+    server.watch('../content/pages/*.md',  # 7
+                 livereload.shell('pelican -s ../pelicanconf.py -o ../output'))  # 8
+    server.watch('*.html')
+    server.watch('*.css')
+    server.serve(liveport=35729, port=port)
+
+
+
+TEMPLATE = """
+Title: {title}
+Subtitle: 
+Date: {year}-{month}-{day} {hour}:{minute:02d}
+Category: Report
+Tags: report, meetup
+Slug: {slug}
+Authors: Too
+Summary:
+"""
+
+def make_entry(title):
+    today = datetime.today()
+    slug = title.lower().strip().replace(' ', '-')
+    f_create = "content/{}_{:0>2}_{:0>2}_{}.md".format(
+        today.year, today.month, today.day, slug)
+    t = TEMPLATE.strip().format(title=title,
+                                hashes='#' * len(title),
+                                year=today.year,
+                                month=today.month,
+                                day=today.day,
+                                hour=today.hour,
+                                minute=today.minute,
+                                slug=slug)
+    with open(f_create, 'w') as w:
+        w.write(t)
+        print("File created -> " + f_create)
+
+def make_report(title):
+    today = datetime.today()
+    slug = title.lower().strip().replace(' ', '-')
+    f_create = "content/report{}{:0>2}{:0>2}.md".format(
+        today.year, today.month, today.day)
+    t = TEMPLATE.strip().format(title=title,
+                                hashes='#' * len(title),
+                                year=today.year,
+                                month=today.month,
+                                day=today.day,
+                                hour=today.hour,
+                                minute=today.minute,
+                                slug=slug)
+    with open(f_create, 'w') as w:
+        w.write(t)
+        print("File created -> " + f_create)
