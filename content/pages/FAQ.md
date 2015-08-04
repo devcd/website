@@ -6,4 +6,4 @@ Slug: faq
 Authors: Too
 Summary: 关于 DevCD 的常见问题（FAQ）
 
-Null for now
+Null now

@@ -149,19 +149,22 @@ def make_entry(title):
         w.write(t)
         print("File created -> " + f_create)
 
-def make_report(title):
+def make_post(title):
     today = datetime.today()
     slug = title.lower().strip().replace(' ', '-')
-    f_create = "content/report{}{:0>2}{:0>2}.md".format(
-        today.year, today.month, today.day)
-    t = TEMPLATE.strip().format(title=title,
-                                hashes='#' * len(title),
-                                year=today.year,
-                                month=today.month,
-                                day=today.day,
-                                hour=today.hour,
-                                minute=today.minute,
-                                slug=slug)
+    if title in ["report", "meetup"]:
+        title = "{}{}{:0>2}{:0>2}".format(title, today.year, today.month, today.day)
+        slug = title
+    f_create = "content/{}.md".format(title)
+    metas = {title: title,
+             hashes: '#' * len(title),
+             year: today.year,
+             month: today.month,
+             day: today.day,
+             hour: today.hour,
+             minute: today.minute,
+             slug: slug}
+    t = TEMPLATE.strip().format(metas)
     with open(f_create, 'w') as w:
         w.write(t)
         print("File created -> " + f_create)
