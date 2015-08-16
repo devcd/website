@@ -156,15 +156,17 @@ def make_post(title):
         title = "{}{}{:0>2}{:0>2}".format(title, today.year, today.month, today.day)
         slug = title
     f_create = "content/{}.md".format(title)
-    metas = {title: title,
-             hashes: '#' * len(title),
-             year: today.year,
-             month: today.month,
-             day: today.day,
-             hour: today.hour,
-             minute: today.minute,
-             slug: slug}
-    t = TEMPLATE.strip().format(metas)
+    t = TEMPLATE.strip().format(title=title,
+                                hashes='#' * len(title),
+                                year=today.year,
+                                month=today.month,
+                                day=today.day,
+                                hour=today.hour,
+                                minute=today.minute,
+                                slug=slug)
+    # t = TEMPLATE.strip().format(metas)
+    # t="1"
+    # print metas['title']
     with open(f_create, 'w') as w:
         w.write(t)
         print("File created -> " + f_create)
