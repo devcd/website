@@ -7,7 +7,7 @@ Use pelican to make a website for developer at Chengdu.
 
 需要使用到  Python，最好有 virtualenv
 
-`pip install pelican markdown ghp-import fabric`
+`pip install pelican markdown ghp-import fabric livereload`
 
 其中 fabric 是用来进行一键自动发布的，可以不装，但是建议使用。
 
