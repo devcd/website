@@ -6,6 +6,10 @@ article, .entry-content > p{
     font-size: 16px;
 }
 
+.entry-content > p {
+    padding: 0 12px;
+}
+
 #sidebar .list-group, #sidebar .list-group-item {
     background-color: transparent;
 }
