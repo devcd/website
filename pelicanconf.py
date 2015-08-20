@@ -22,9 +22,9 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-OUT_LINKS = (('蠎周刊', 'http://weekly.pychina.org', '主要翻译 Pycoder\'s Weekly（主要是关于 Python 的。)'),
+OUT_LINKS = (('蠎周刊', 'http://weekly.pychina.org', '主要翻译 Pycoder\'s Weekly（关于 Python 的信息)'),
          ('CDLUG', 'https://groups.google.com/group/cdlug_community', '成都 Linux 用户组，要翻墙，你懂的'),
-         ('V2EX', 'https://v2ex.com', '国内有名的技术论坛'),)
+         ('V2EX', 'https://v2ex.com', '国内有名的技术论坛, Python 气息浓厚'),)
 
 # Social widget
 SOCIAL = (('QQ 群号 312412351', 'http://qun.qzone.qq.com/group#!/312412351/home', 'qq'),
