@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'devcd.io'
-SITENAME = u'DevCD'
+SITENAME = u'DevCD 成都开发者'
 SITEURL = u'http://dev:8001'
 
 PATH = u'content'
