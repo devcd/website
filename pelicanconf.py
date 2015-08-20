@@ -22,7 +22,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('蠎周刊', 'http://weekly.pychina.org', '主要翻译 Pycoder\'s Weekly（主要是关于 Python 的。)'),
+OUT_LINKS = (('蠎周刊', 'http://weekly.pychina.org', '主要翻译 Pycoder\'s Weekly（主要是关于 Python 的。)'),
          ('CDLUG', 'https://groups.google.com/group/cdlug_community', '成都 Linux 用户组，要翻墙，你懂的'),
          ('V2EX', 'https://v2ex.com', '国内有名的技术论坛'),)
 

@@ -2,7 +2,8 @@
 {% block content %}
     {% if articles %}
         {% for article in (articles_page.object_list if articles_page else articles) %}
-            <article>
+            <article class="row">
+              <div class="col-sm-10 col-xs-12">
                 <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
                 {% if DISPLAY_ARTICLE_INFO_ON_INDEX %}
                     <div class="well well-sm">
@@ -13,10 +14,30 @@
                     {% include 'includes/comment_count.html' %}
                     <a class="btn btn-default btn-xs" href="{{ SITEURL }}/{{ article.url }}">more ...</a>
                 </div>
+              </div>
+              <div class="col-sm-2 hidden-xs text-right">
+                <time datetime="{{ article.date.isoformat() }}"><div class="h5" style="padding-top: 20px;">{{ article.locale_date }}</div></time>
+                <div><span class="label label-default">{{ article.category }}</span></div>
+              </div>
+                  
             </article>
             <hr/>
         {% endfor %}
     {% endif %}
 
     {% include 'includes/pagination.html' %}
+
 {% endblock content %}
+{% block links %}
+{% for name, link, note in OUT_LINKS %}
+<div class="col-sm-4 col-xs-12 well-sm">
+<div style="padding-left: 10px;">
+  <i class="fa fa-external-link-square fa-lg"></i><a href="{{ link }}" target="_blank">
+    {{ name }}
+  </a>
+  <div class="small text-warning">{{ note }}</div>
+</div>
+</div>
+{% endfor %}
+{% endblock %}
+
