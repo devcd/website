@@ -16,12 +16,13 @@ Developers in Chengdu, China — 成都开发者们交流、信息站，为了�
 
 使用了 Pelican 来生成静态文件，部署到 Github Pages 上，然后将 devcd.io 域名指向了 `dev.github.io`，内容通过 Markdown 编写。
 
-## 网上信息
+## 网上信息  
+<div class=text-left><img src=/img/qq.png width=540 alt=Python成都QQ群二维码></div>  
+
 QQ 群: 312412351（目前160多人）  
 Telegram 群（已被墙）：[https://telegram.me/joinchat/05ea4cb10254a5ae6a13168e5b46867e][1]  
 微信群：QQ 群相册里有二维码，或者添加我微信（toolib）后，拉进去。  
-Chengdu Python User Group @meetup [meetup group 链接][2]  
-
+Chengdu Python User Group @meetup [meetup group 链接][2]
 
 ## 活动日历
 日历地址 [iCal Link][3]（需要翻墙）。包括平时聚会的活动日程，收集到的成都其他一些技术活动的日程。
