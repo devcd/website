@@ -19,7 +19,7 @@ Developers in Chengdu, China — 成都开发者们交流、信息站，为了�
 ## 网上信息  
 <div class=text-left><img src=/img/qq.png width=540 alt=Python成都QQ群二维码></div>  
 
-QQ 群: 312412351（目前160多人）  
+QQ 群: 312412351（目前190多人）  
 Telegram 群（已被墙）：[ Telegram Join Link ][1]  
 微信群：QQ 群相册里有二维码，或者添加我微信（toolib）后，拉进去。  
 Chengdu Python User Group @meetup [meetup group 链接][2]
