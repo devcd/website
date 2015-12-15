@@ -7,7 +7,7 @@ SITENAME = u'DevCD 成都开发者'
 SITEURL = u'http://dev:8001'
 
 PATH = u'content'
-STATIC_PATHS = ['img', 'extra/CNAME']
+STATIC_PATHS = ['img', 'files', 'extra/CNAME']
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 
 TIMEZONE = u'Asia/Shanghai'
