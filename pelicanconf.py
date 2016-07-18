@@ -2,13 +2,13 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = u'devcd.io'
+AUTHOR = u'DEVCD'
 SITENAME = u'DevCD 成都开发者'
 SITEURL = u'http://dev:8001'
 
 PATH = u'content'
-STATIC_PATHS = ['img', 'files', 'extra/CNAME']
-EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
+STATIC_PATHS = ['img', 'files', 'docs']
+# EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 
 TIMEZONE = u'Asia/Shanghai'
 
